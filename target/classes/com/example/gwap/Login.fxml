@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gwap.Login">
+    <right>
+        <AnchorPane prefHeight="404.0" prefWidth="209.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="Button" fitHeight="210.0" fitWidth="223.0" layoutX="-1.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/Image login.jpg" />
+                    </image>
+                </ImageView>
+                <Label fx:id="Label" layoutX="78.0" layoutY="68.0" prefHeight="18.0" prefWidth="70.0" text="SIGN IN" textFill="WHITE">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="username" layoutX="37.0" layoutY="131.0" promptText="User ID" />
+                <PasswordField fx:id="password" layoutX="37.0" layoutY="181.0" promptText="password" />
+                <Button fx:id="button" layoutX="87.0" layoutY="248.0" mnemonicParsing="false" onAction="#userLogin" text="Sign In" />
+                <Hyperlink fx:id="link" layoutX="55.0" layoutY="300.0" text="New User? Sign Up?" textFill="WHITE" />
+                <Label fx:id="wrongLogin" alignment="CENTER" layoutX="94.0" layoutY="84.0" textFill="RED" />
+            </children>
+        </AnchorPane>
+    </right>
+   <left>
+      <ImageView fitHeight="324.0" fitWidth="783.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../Images/Screenshot%20(89).png" />
+         </image>
+      </ImageView>
+   </left>
+</BorderPane>

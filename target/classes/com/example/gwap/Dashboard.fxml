@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="470.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gwap.dashboard">
+   <children>
+      <BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="1000.0" style="-fx-background-color: #000105;" styleClass="#000000">
+          <left>
+              <VBox prefHeight="327.0" prefWidth="232.0" style="-fx-background-color: #151519;" BorderPane.alignment="CENTER">
+                  <children>
+                      <Label prefHeight="39.0" prefWidth="226.0" text=" Welcome To G-WAP" underline="true">
+                          <font>
+                              <Font name="System Bold" size="21.0" />
+                          </font>
+                          <effect>
+                              <Glow />
+                          </effect>
+                          <textFill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.5388258081493955">
+                                  <stops>
+                                      <Stop>
+                                          <color>
+                                              <Color red="0.2074074000120163" green="1.0" blue="0.8282716274261475" opacity="0.9700000286102295" />
+                                          </color>
+                                      </Stop>
+                                      <Stop offset="0.995121951219512">
+                                          <color>
+                                              <Color red="0.02222222276031971" green="0.7229629755020142" blue="1.0" />
+                                          </color>
+                                      </Stop>
+                                      <Stop offset="1.0">
+                                          <color>
+                                              <Color />
+                                          </color>
+                                      </Stop>
+                                  </stops>
+                              </LinearGradient>
+                          </textFill>
+                      </Label>
+                      <Button graphicTextGap="5.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="123.0" style="-fx-background-color: #151519;" text="Dash view" textFill="WHITE">
+                          <font>
+                              <Font size="14.0" />
+                          </font>
+                      </Button>
+                      <Button graphicTextGap="5.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="151.0" style="-fx-background-color: #151519;" text="Projection view" textFill="WHITE">
+                          <font>
+                              <Font size="14.0" />
+                          </font>
+                      </Button>
+                      <Button graphicTextGap="5.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="134.0" style="-fx-background-color: #151519;" text="Bubble view" textFill="WHITE">
+                          <font>
+                              <Font size="14.0" />
+                          </font>
+                      </Button>
+                      <Button graphicTextGap="5.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="125.0" style="-fx-background-color: #151519;" text="Map view" textFill="WHITE">
+                          <font>
+                              <Font size="14.0" />
+                          </font>
+                      </Button>
+                      <Button graphicTextGap="5.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="138.0" style="-fx-background-color: #151519;" text="Radar view" textFill="WHITE">
+                          <font>
+                              <Font size="14.0" />
+                          </font>
+                      </Button>
+                  </children>
+                  <effect>
+                      <InnerShadow height="0.0" radius="4.75">
+                          <color>
+                              <Color red="0.6736842393875122" green="0.6462377905845642" blue="0.6462377905845642" />
+                          </color>
+                      </InnerShadow>
+                  </effect>
+              </VBox>
+          </left>
+          <effect>
+              <Glow />
+          </effect>
+          <center>
+              <BorderPane prefHeight="338.0" prefWidth="768.0" />
+          </center>
+      </BorderPane>
+        <AnchorPane prefHeight="188.0" prefWidth="1000.0" style="-fx-background-color: #151519;">
+            <children>
+                <Button fx:id="back2" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#dashboardback" prefHeight="30.0" prefWidth="123.0" style="-fx-background-color: #000000;" text="Back" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="14.0" />
+                    </font>
+                </Button>
+            </children>
+            <effect>
+                <InnerShadow>
+                    <color>
+                        <Color red="0.46315789222717285" green="0.46315789222717285" blue="0.46315789222717285" />
+                    </color>
+                </InnerShadow>
+            </effect>
+        </AnchorPane>
+   </children>
+</VBox>
